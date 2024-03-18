@@ -315,11 +315,6 @@ span {
     weight: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.card {
-    height: 85vh;
-    weight: 100%;
     position: relative;
     border: 2px solid var(--main-color);
     box-shadow: 0 0px 15px;
