@@ -105,35 +105,108 @@
     </section>
 
     <!-- Testimonial Section Design-->
-        <section class="testimonial" id="testimonial">
-            <h2 class="heading">My <span>Testimonial</span></h2>
+    <section class="testimonial" id="testimonial">
+      <div class="card">
+        <div class="hero">
+            <h1>Testimo<span>nials</span></h1>
 
-        <div class="testimonial-container">
+            <div class="testimonial-container">
+                <div class="indicator">
+                    <span class="butt active"></span>
+                    <span class="butt"></span>
+                    <span class="butt"></span>
+                    <span class="butt"></span>
+                </div>                
+                    <div class="testi">
+                        <div class="slide-row" id="slide">
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptatibus, dignissimos. Itaque rem nobis veritatis dolor, 
+                                    molestias totam architecto enim sint reprehenderit?</p>
+                                    <h3>Ley</h3>
+                                    <p>emecompany.Inc</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="img/s8.png" alt="">
+                                </div>                
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptatibus, dignissimos. Itaque rem nobis veritatis dolor, 
+                                    molestias totam architecto enim sint reprehenderit?</p>
+                                    <h3>Angela</h3>
+                                    <p>panot.Inc</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="img/s1.png" alt="">
+                                </div>                
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptatibus, dignissimos. Itaque rem nobis veritatis dolor, 
+                                    molestias totam architecto enim sint reprehenderit?</p>
+                                    <h3>John</h3>
+                                    <p>hexagon.Inc</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="img/s7.png" alt="">
+                                </div>                
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptatibus, dignissimos. Itaque rem nobis veritatis dolor, 
+                                    molestias totam architecto enim sint reprehenderit?</p>
+                                    <h3>Momo</h3>
+                                    <p>accenture.Inc</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="img/s13.png" alt="">
+                                </div>                
+                            </div>
+                        </div>
+                    </div>    
+            </div>                      
+        </div> 
+      </div>     
+    </section> 
 
-        <div class="testimonial-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim molestiae magnam facere eum perferendis, rem fugit perspiciatis corrupti tenetur ea. Autem quae eos quasi doloremque dolorem vel excepturi qui atque.</p>
-            <a href="#" class="btn">READ MORE</a>
-        </div>
-            
+        <script>
+            var butt = document.getElementsByClassName("butt");
+            var slide = document.getElementById("slide");
 
-        <div class="testimonial-box">
-            <i class="fa-solid fa-palette"></i>
-            <h3 class="">Designer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut animi consequuntur sint, ullam commodi cumque laborum. Assumenda quibusdam voluptate commodi repellendus alias, voluptatem recusandae blanditiis. Ut libero accusantium blanditiis.</p>
-            <a href="#" class="btn">READ MORE</a>
-        </div>
-
-        <div class="testimonial-box">
-            <i class="fa-brands fa-android"></i>
-            <h3>Programmer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut animi consequuntur sint, ullam commodi cumque laborum. Assumenda quibusdam voluptate commodi repellendus alias, voluptatem recusandae blanditiis. Ut libero accusantium blanditiis.</p>
-            <a href="#" class="btn">READ MORE</a>
-        </div>
-
-        </div>
-        </section> 
+            butt[0].onclick = function() {
+                slide.style.transform = "translateX(0px)";
+                for(a=0;a<4;a++) {
+                    butt[a].classList.remove("active");
+                }
+                this.classList.add("active");                
+            }                
+            butt[1].onclick = function() {
+                slide.style.transform = "translateX(-800px)";
+                for(a=0;a<4;a++) {
+                    butt[a].classList.remove("active");
+                }
+                this.classList.add("active");                              
+            }
+            butt[2].onclick = function() {
+                slide.style.transform = "translateX(-1600px)";
+                for(a=0;a<4;a++) {
+                    butt[a].classList.remove("active");
+                }
+                this.classList.add("active");                                
+            }
+            butt[3].onclick = function() {
+                slide.style.transform = "translateX(-2400px)";
+                for(a=0;a<4;a++) {
+                    butt[a].classList.remove("active");
+                }
+                this.classList.add("active");                       
+            }
+        </script>
 
     <!-- Blog Section Design-->
         <section class="blog" id="blog">
@@ -192,8 +265,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
                         <i class="fa-solid fa-share-from-square"></i>
                      </div>
-                </div>             
-            </div>
+                  </div>   
+             </div>          
+           </div>
         </section>
     <!-- Contact Section Design-->
         <section class="contact" id="contact">
@@ -216,5 +290,6 @@
 
         <!-- FAQ Section Design-->
 
+        
 </body>
 </html>
