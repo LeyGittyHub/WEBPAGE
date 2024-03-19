@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+/*font-family: "Viga", sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Madimi One', sans-serif;
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-color: #262B40;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+    --font-color: #FEFBF6;
+}
+
+
+
+body {
+     background: var(--bg-color);
+     color: var(--text-color);
+    }
+
+section {
+     min-height: 100vh;
+     padding: 10rem 9% 2rem;
+    }
+
+h1 {
+    font-size: 50px;
+    }
+
+
+a {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #262B40, #59B2F4);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin: 50px;
+    
+   }
+   
+   a:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+.card {
+    width: 190px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
