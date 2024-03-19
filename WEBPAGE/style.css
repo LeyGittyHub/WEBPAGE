@@ -129,8 +129,7 @@ span {
     background-image: linear-gradient(43deg, #378CE7 10%, #3148A3 25%);
     -webkit-background-clip: text;
     color: transparent;
-    
-    
+       
 }
 
 .diagonal-right {
@@ -141,7 +140,6 @@ span {
     position: relative;
     top: 30px;
     left: 300px;
-
 }
 
 .home-content h2 {
@@ -151,15 +149,13 @@ span {
     font-size: 100px;
     background-image: linear-gradient(43deg, #3148A3 12%, #fff 60%);
     -webkit-background-clip: text;
-    color: transparent;
-    
+    color: transparent;  
 }
 
 .home-content p {
     text-align: justify;
     width: 60%;
-    font-size: 80px;
-    
+    font-size: 80px;   
 }
 
 .img-cont {
@@ -257,20 +253,12 @@ span {
     transition: .5s ease;
     background: var(--snd-color);
     border: .2rem solid var(--bg-color);
-
 }
 
 .about-box h1 {
     font-size: 3.5rem;
     font-family: "Viga", sans-serif;
     padding: 20px;
-}
-
-
-.skill-box img {
-    height: 330px;
-    weight: 350px;
-    border-radius: 3%;
 }
 
 .details {
@@ -298,34 +286,44 @@ span {
     transform: scale(1.02);
 }
 
-.about-container .skill-box {
+.skill-box img {
+    height: 330px;
+    weight: 350px;
+    border-radius: 3%;
+}
+
+.skill-box {
     transition: .5s ease;
 }
 
-.about-container .skill-box:hover {
+.skill-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
+   
 }
-
 
 /* Testimonial Section Design */
 
 .hero { 
-    height: 85vh;
+    margin-top: 100px;
+    height: 70vh;
     weight: 100%;
     position: relative;
     overflow: hidden;
-    position: relative;
     border: 2px solid var(--main-color);
     box-shadow: 0 0px 15px;
     border-radius: 50rem;
+    transition: .5s ease;
+}
+
+.hero:hover {
+    transform: scale(1.1);
 }
 
 .hero h1 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 60px;
-
 }
 
 .slide-row {
@@ -495,5 +493,8 @@ span {
 
 
 /* Contact Section Design */
+
+/* FAQ Section Design */
+
 
 
