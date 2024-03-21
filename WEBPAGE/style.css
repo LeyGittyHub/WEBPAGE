@@ -94,20 +94,19 @@ section {
   justify-content: center;
   align-items: center;
   width: 150px;
-  border: 2px solid #00abf0;
   border-radius: 8px;
   font-size: 19px;
-  color: #081b29;
+  color: #FEFBF6;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
   z-index: 1;
-  box-shadow: 0 0 1rem var(--main-color);
   transition: 0.5 ease;
+  border: 2px solid #24b4fb;
 }
 
 .btn:hover {
-  box-shadow: none;
+  background-color: #0071e2;
 }
 
 .home-content {
@@ -422,8 +421,9 @@ span {
 .bbtn {
   border: none;
   width: 150px;
+  color: #fff;
   background-image: linear-gradient(30deg, #59B2F4, #59B2F4);
-  border-radius: 20px;
+  border-radius: 8px;
   background-size: 100% auto;
   font-size: 17px;
   padding: 0.6em 1.5em;
