@@ -420,26 +420,39 @@ span {
 }
 
 .bbtn {
-  width: 180px;
-  color: var(--snd-color);
-  font-size: 12px;
-  padding: 12px 0;
-  background: #fff;
-  border: 0;
+  border: none;
+  width: 150px;
+  background-image: linear-gradient(30deg, #59B2F4, #59B2F4);
   border-radius: 20px;
-  outline: none;
-  margin-top: 30px;
+  background-size: 100% auto;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  margin: 50px;
+  justify-content: center;
   cursor: pointer;
-  transition-duration: 0.3;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
+  
 }
 
 .bbtn:hover {
-  box-shadow: 0 0 20px rgba(129, 125, 242, 1.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
 }
+
+@keyframes pulse512 {
+  0% {
+   box-shadow: 0 0 0 0 #05bada66;
+  }
+ 
+  70% {
+   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+ 
+  100% {
+   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+ }
 
 .blog-card {
   width: 300px;
