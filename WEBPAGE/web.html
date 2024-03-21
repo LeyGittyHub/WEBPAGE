@@ -23,7 +23,7 @@
     <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#testimonial">Testimonial</a>
+        <a href="#testimonial">Testimonial</a>   
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -33,9 +33,9 @@
     <section class="home" id="home">
 <div class="home-content">
     
-        <h1>HELLO</h1>
+        <h1 class="multiple-text">HELLO</h1>
         <span class="diagonal-right"></span>
-        <h2>WORLD!</h2>
+        <h2 class="multiple-text">WORLD!</h2>
     
     
     <p>Programming! One of the most demanding yet very challenging domains of today’s time. 
@@ -55,16 +55,13 @@
 <div class="home-img">
     <h3><span>Develop</span>er</h3>
     <div class="img-cont">
-        <img src="img/l1.jpg" alt="skrrrrtttley">
+        <img src="img/leyformal.jpg" alt="skrrrrtttley">
         <img src="img/a1.png" alt="anglemaemarie">
     </div>
     <h4><span>Design</span>er</h4>
     
 </div>
     </section>
-
-    <script src="JS/main.js"></script>
-
 
     <!--About Section Design-->
     <section class="about" id="about">
@@ -87,7 +84,7 @@
                     </div>
                 <div class="about-box">
                     <h1>Developer</h1>
-                    <img src="img/l1.jpg" alt="">
+                    <img src="img/leyformal.jpg" alt="">
                         <div class="details">
                             <div><span>Lovely </span>Casandig </div>
                             <div>Manaoag, Pangasinan</div>
@@ -206,60 +203,46 @@
         </script>
 
     <!-- Blog Section Design-->
-        <section class="blog" id="blog">
-            <h2 class="heading">Latest <span>Blog</span></h2>
-
-                <div class="blog-container">
-                    <div class="blog-box">
-                        <img src="img/s2.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
+        <section class="blog" id="blog">  
+                      
+                <div class="blog-row">
+                    <div class="blog-col">
+                        <h1>Latest <span>Blog</span></h1>  
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Fugiat explicabo fugit dolor impedit enim quibusdam officia
+                        Fugiat explicabo fugit dolor impedit enim quibusdam officia 
+                        iste dolore quas sequi.</p>
+                            <a href="projectPages.html">
+                                <button type="button" class="bbtn">Explore</button>
+                            </a>
+                    </div>                    
+                    <div class="blog-col">
+                        <div class="blog-card card1">
+                            <h5>Western</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Architecto deserunt expedita libero doloribus ratione ea 
+                                soluta dicta accusantium nulla sint.</p>
+                        </div>
+                        <div class="blog-card card2">
+                            <h5>Western</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Architecto deserunt expedita libero doloribus ratione ea 
+                                soluta dicta accusantium nulla sint.</p>
+                        </div>
+                        <div class="blog-card card3">
+                            <h5>Western</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Architecto deserunt expedita libero doloribus ratione ea 
+                                soluta dicta accusantium nulla sint.</p>
+                        </div>
+                        <div class="blog-card card4">
+                            <h5>Western</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Architecto deserunt expedita libero doloribus ratione ea 
+                                soluta dicta accusantium nulla sint.</p>
                         </div>
                     </div>
-                    <div class="blog-box">
-                        <img src="img/s3.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <img src="img/s4.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </div>
-                    </div>
-                    <div class="blog-box">
-                        <img src="img/s5.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </div>
-                    </div>                        
-                    <div class="blog-box">
-                        <img src="img/s5.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </div>
-                    </div>  
-                    <div class="blog-box">
-                        <img src="img/s5.png" alt="">
-                        <div class="blog-layer">
-                            <h4>Web Design</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, rem!</p>
-                            <i class="fa-solid fa-share-from-square"></i>
-                        </div>
-                    </div>   
-                    </div>          
-                </div>
+                </div>                
         </section>
 
         
@@ -268,21 +251,35 @@
             <h2 class="heading">Contact</h2>
 
             <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email Address">
+                    </div>
 
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-
-            <a href="subpage.html">click to second page</a>
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send Message" class="btn">
+            </form>           
             </section> 
         
+
+        
+        <!-- Footer Section -->   
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by @lovelycasandig&angelabarlolong | All rights Reserved.</p>
+            </div>
+
+            <div class="footer-icon">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>     
+
+        <script src="JS/main.js"></script>
+
+
 </body>
 </html>
