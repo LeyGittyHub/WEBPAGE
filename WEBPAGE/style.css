@@ -302,12 +302,10 @@ span {
   border: 2px solid var(--main-color);
   box-shadow: 0 0px 15px;
   border-radius: 50rem;
-  transition: 0.5s ease;
+  
 }
 
-.hero:hover {
-  transform: scale(1.1);
-}
+
 
 .hero h1 {
   text-align: center;
@@ -580,12 +578,6 @@ span {
 
 .category:hover {
   cursor: pointer;
-}
-
-.heading {
-  font-weight: 600;
-  color: rgb(88, 87, 87);
-  padding: 7px;
 }
 
 .heading:hover {
