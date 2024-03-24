@@ -407,16 +407,17 @@ span {
   align-items: center;
 }
 
+.paracont {
+  max-width: 600px;
+}
+
 .blog-col {
   flex-basis: 50%;
 }
 
 .blog-col h1 {
   font-size: 100px;
-  
 }
-
-
 
 .bbtn {
   border: none;
