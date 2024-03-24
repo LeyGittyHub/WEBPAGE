@@ -25,7 +25,7 @@
         <a href="#about">About</a>
         <a href="#testimonial">Testimonial</a>   
         <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#contacts">Contact</a>
     </nav>
    </header>
 
@@ -49,7 +49,8 @@
         <a href="#"><i class="fa-brands fa-github"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
-    <a href="#" class="btn">Download CV</a>   
+    <a href="/CASANDIG - CV.pdf" class="btn">DOWNLOAD CV</a>   
+    
 </div>
 
 <div class="home-img">
@@ -213,7 +214,7 @@
                         Fugiat explicabo fugit dolor impedit enim quibusdam officia 
                         iste dolore quas sequi.</p>
                             <a href="projectPages.html">
-                                <button type="button" class="bbtn">Explore</button>
+                                <button type="button" class="bbtn">EXPLORE</button>
                             </a>
                     </div>                    
                     <div class="blog-col">
@@ -247,26 +248,28 @@
 
         
     <!-- Contact Section Design-->
-        <section class="contact" id="contact">
+        <section class="contact" id="contacts">
             <h2 class="heading">Contact</h2>
+            <form onsubmit="emailSend(); reset(); return false;">
 
-            <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email Address">
+                    <div class="input-box">           
+                        <input type="text" id="name" placeholder="Full Name" name="name">
+                        <input type="email" id="email" placeholder="Email ID" name="email">
                     </div>
 
                     <div class="input-box">
-                        <input type="number" placeholder="Mobile Number">
-                        <input type="text" placeholder="Subject">
+                        <input type="number" id="contact" placeholder="Mobile Number +63" name="mobile">
+                        <input type="text" id="subject" placeholder="Subject" name="subject">
                     </div>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                            <input type="submit" value="Send Message" class="btn">
-            </form>           
-            </section> 
-        
+                            <textarea cols="30" rows="7" id="message" placeholder="Message" name="message"></textarea>
+                            <button type="submit" class="btn">SUBMIT</button>
+            </form>        
+            </section>   
 
-        
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="script.js"></script>
+
+
         <!-- Footer Section -->   
         <footer class="footer">
             <div class="footer-text">
@@ -277,7 +280,7 @@
                 <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
             </div>
         </footer>     
-
+        
         <script src="JS/main.js"></script>
 
 
