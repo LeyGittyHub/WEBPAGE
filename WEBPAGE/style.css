@@ -96,7 +96,7 @@ section {
   width: 150px;
   border-radius: 8px;
   font-size: 17px;
-  color: #FEFBF6;
+  color: #fefbf6;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -301,10 +301,7 @@ span {
   border: 2px solid var(--main-color);
   box-shadow: 0 0px 15px;
   border-radius: 50rem;
-  
 }
-
-
 
 .hero h1 {
   text-align: center;
@@ -416,43 +413,45 @@ span {
 
 .blog-col h1 {
   font-size: 100px;
+  
 }
+
+
 
 .bbtn {
   border: none;
   width: 150px;
   color: #fff;
-  background-image: linear-gradient(30deg, #59B2F4, #59B2F4);
+  background-image: linear-gradient(30deg, #59b2f4, #59b2f4);
   border-radius: 8px;
   background-size: 100% auto;
   font-size: 20px;
   padding: 0.6em 1.5em;
-  margin: 50px;
+  margin: 30px;
   justify-content: center;
   cursor: pointer;
-  
 }
 
 .bbtn:hover {
-    background-position: right center;
-    background-size: 200% auto;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse512 1.5s infinite;
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
 }
 
 @keyframes pulse512 {
   0% {
-   box-shadow: 0 0 0 0 #05bada66;
+    box-shadow: 0 0 0 0 #05bada66;
   }
- 
+
   70% {
-   box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
   }
- 
+
   100% {
-   box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
   }
- }
+}
 
 .blog-card {
   width: 300px;
@@ -466,6 +465,7 @@ span {
   background-position: center;
   background-size: cover;
   transition: transform 0.5s;
+  
 }
 
 .blog-card:hover {
@@ -473,17 +473,19 @@ span {
 }
 
 .card1 {
-  background-image: url(img/s3.png);
+  background-image: url(img/c1.jpg);
+  
 }
 .card2 {
-  background-image: url(img/s5.png);
+  background-image: url(img/c2.jpg);
 }
 .card3 {
-  background-image: url(img/s1.png);
+  background-image: url(img/c3.jpg);
 }
 .card4 {
-  background-image: url(img/s8.png);
+  background-image: url(img/c4.jpg);
 }
+
 
 /* Contact Section Design */
 
