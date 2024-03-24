@@ -248,26 +248,24 @@
 
         
     <!-- Contact Section Design-->
-        <section class="contact" id="contacts">
-            <h2 class="heading">Contact</h2>
-            <form onsubmit="emailSend(); reset(); return false;">
+    <section class="contact" id="contacts">
+        <h2 class="heading">Contact</h2>
 
-                    <div class="input-box">           
-                        <input type="text" id="name" placeholder="Full Name" name="name">
-                        <input type="email" id="email" placeholder="Email ID" name="email">
-                    </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-                    <div class="input-box">
-                        <input type="number" id="contact" placeholder="Mobile Number +63" name="mobile">
-                        <input type="text" id="subject" placeholder="Subject" name="subject">
-                    </div>
-                            <textarea cols="30" rows="7" id="message" placeholder="Message" name="message"></textarea>
-                            <button type="submit" class="btn">SUBMIT</button>
-            </form>        
-            </section>   
+            <input type="hidden" name="access_key" value="61d38921-7028-495a-9c22-562cadaf0aab">
 
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script src="script.js"></script>
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="number" name="contact" placeholder="Mobile Number">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit" class="btn">Submit</button>                   
+                </div>
+                       
+        </form>           
+        </section>
 
 
         <!-- Footer Section -->   
