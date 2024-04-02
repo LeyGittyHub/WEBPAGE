@@ -324,7 +324,7 @@ span {
 .user-img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 140px;
   height: 100%;
 }
 
