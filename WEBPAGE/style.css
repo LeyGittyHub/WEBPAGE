@@ -85,7 +85,6 @@ section {
 }
 
 .btn {
-  display: flex;
   justify-content: space-between;
   width: 345px;
   height: 50px;
@@ -94,12 +93,11 @@ section {
   justify-content: center;
   align-items: center;
   width: 150px;
-  border-radius: 8px;
   font-size: 17px;
   color: #fefbf6;
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 300;
+  letter-spacing: 2px;
   z-index: 1;
   transition: 0.5 ease;
   border: 2px solid #24b4fb;
@@ -466,7 +464,6 @@ span {
   background-position: center;
   background-size: cover;
   transition: transform 0.5s;
-  
 }
 
 .blog-card:hover {
@@ -475,7 +472,6 @@ span {
 
 .card1 {
   background-image: url(img/c1.jpg);
-  
 }
 .card2 {
   background-image: url(img/c2.jpg);
@@ -487,6 +483,189 @@ span {
   background-image: url(img/c4.jpg);
 }
 
+/* Gallery Section Design */
+
+input {
+  display: none;
+}
+
+.gcontainer {
+  width: 100%;
+  text-align: center;
+}
+
+.h1gallery {
+  font-weight: normal;
+  font-size: 50px;
+  position: relative;
+  margin: 30px 0;
+}
+
+.h1gallery::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: var(--main-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.top-content {
+  background-color: var(--snd-color);
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+
+.h3pg {
+  height: 100%;
+  background-color: var(--main-color);
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+}
+
+label {
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label:hover {
+  color: var(--main-color);
+}
+
+.photo-gallery {
+  width: 98%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.picg {
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.picg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.picg::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
+  color: white;
+  width: 100%;
+  margin-top: -100%;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s 
+  z-index: 1;
+} 
+
+.picg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px; 
+  height: 0;
+  background-color: rgba(0, 0, 555,.4); 
+  transition: .3s;
+}
+
+.picg:hover:after {
+  height: 100%;
+}
+
+.picg:hover::before {
+  margin-top: 0; 
+  opacity: 1;
+}
+
+
+#check1:checked ~ .gcontainer .photo-gallery .picg {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+
+#check2:checked ~ .gcontainer .photo-gallery .project {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check2:checked ~ .gcontainer .photo-gallery .developer,
+#check2:checked ~ .gcontainer .photo-gallery .technology {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check3:checked ~ .gcontainer .photo-gallery .developer {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check3:checked ~ .gcontainer .photo-gallery .project,
+#check3:checked ~ .gcontainer .photo-gallery .technology {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check4:checked ~ .gcontainer .photo-gallery .technology {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check4:checked ~ .gcontainer .photo-gallery .project,
+#check4:checked ~ .gcontainer .photo-gallery .developer {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
 
 /* Contact Section Design */
 
@@ -613,4 +792,112 @@ span {
 
 .name:hover {
   cursor: pointer;
+}
+
+/*BreakPoint*/
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3%;
+  }
+
+  .testimonial {
+    padding: 7rem;
+  }
+
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+
+  .contact {
+    min-height: auto;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-content {
+    order: 2;
+  }
+
+  .home-img img {
+    width: 90vw;
+    margin-top: 4rem;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    width: 90vw;
+    margin-top: 4rem;
+  }
+
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-container {
+    grid-template-colums: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-img img {
+    width: 80vw;
+    margin-top: 8rem;
+  }
+
+  .about-img img {
+    width: 100vw;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
 }
